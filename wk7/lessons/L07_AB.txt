@@ -1,0 +1,33 @@
+Linear Systems -> L07_A
+
+* all variables are linear
+
+* first degree, multivariable polynomials formed with addition and subtraction
+------------------------------------------------------------------------------
+Systems of Equations of Unique Solutions -> L07_B
+
+* same number of linearly independent (LI) equations as unknowns
+
+* having the same number of variables as unknows does note mean we have
+  a solvable system, or that there will be a unique solution.
+
+* in order to transcribe these equations into Matlab we must
+  1) write the unknowns in the same order in every equation
+  2) leave space for missing unknowns or explicitly write 0s
+     we need matrix A to be square
+
+* the whole point of doing this is to achieve matrix form (Ax = b)
+  where the LHS (A) are the coefficients of the unknowns, and on the RHS
+  x is a column vector of unknowns and b is a column vector of constants
+
+* find the vector x such that Ax = b, for small systems substitution or elimination
+
+* x = inv(A)*b -> matrix inverse (A must be square)
+* x = rref([A b]) -> reduced row echelon
+* x = A\b -> faster Gauss-Jordan elimination [A|b] ~ [I|x]
+
+
+
+
+
+

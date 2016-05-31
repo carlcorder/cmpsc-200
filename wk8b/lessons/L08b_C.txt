@@ -1,0 +1,16 @@
+Numerical differentiation of data collected from an experiment
+
+*data needs to be uniformly sampled
+       -ways around this requirement include interpolation
+*low sampling rate can give poor estimate
+     -same as when we knew function
+*avoid aliasing
+*numerical derivative is not very accurate for a low sample rate
+
+Accuracy is suscetible to 'noise' in the data
+* experimental data will have noise
+*higher sampling rates can worsen the problem
+*the three methods we are looking at may perform poorly and it may be neccessary to use higher order methods
+*can first filter the data to smooth noise
+*integration not impacted as greatly by random noise
+*using more points in the differentiation can help to mitigate the effects of the noise

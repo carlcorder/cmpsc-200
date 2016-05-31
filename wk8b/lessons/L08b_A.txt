@@ -1,0 +1,31 @@
+Finding derivatives using numerical techniques. We look at operating on functions and on discrete empirical data.
+
+Numerical differentiation
+
+definition of a derivative dy/dx = lim(h->0) (y(x+h)-y(x))/h
+numerically, we cannot let h->0 but we can make it very small
+calculate the derivative at every point by sliding x and keeping h constant
+
+3 Finite difference methods: forward, backward & central-may use all methods on a given
+set of data
+
+1) forward differentiation
+
+y' ~ (y_{n+1}-y_{n})/(x_{n+1}-x_{n})
+
+*cannot be used in real time
+
+2) backward differentiation
+
+y' ~ (y_{n}-y_{n-1})/(x_{n}-x_{n-1})
+
+*can be used in real time
+
+3) central differentiation-note that the point of interest isn't used
+
+y' ~ (y_{n+1}-y_{n-1})/(x_{n+1}-x_{n-1})
+
+*most accuracy per number of sample points
+*cannot be done in real time
+
+

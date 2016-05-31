@@ -1,0 +1,34 @@
+Numerical differentiation: general finite differencing formula
+
+forward
+y'(k) = sum(C_{i} y(k+i),{i,0,N})/dx
+
+backward
+y'(k) = sum(C_{i} y(k+i),{i,-N,0})/dx
+
+central
+y'(k) = sum(C_{i} y(k+i),{i,-N/2,N/2})/dx
+
+Where C_{i} is the coefficient of the ith term and is given by the algorithm we choose and the accuracy we desire
+
+we need to have uniform step size i.e. dx is constant
+
+general formulae for 2nd derivatives look similar
+
+forward
+y''(k) = sum(C_{i} y(k+i),{i,0,N})/dx^2
+
+backward
+y''(k) = sum(C_{i} y(k+i),{i,-N,0})/dx^2
+
+central
+y''(k) = sum(C_{i} y(k+i),{i,-N/2,N/2})/dx^2
+
+note that the C_{i} terms will be different
+
+https://en.wikipedia.org/wiki/Finite_difference_coefficient
+we can look up the terms in a FD/BD (forward differentiation/backward differentiation) table.
+
+* negative coefficients for BD only for odd derivatives
+
+CD coefficients have a serparate table-these allow us to get the same accuracy with fewer terms. This is helpful in cases where we don't have a lot of data.
